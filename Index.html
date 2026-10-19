@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Just Search Web Design | Professional Website Package - ONLY AED 799</title>
+  <meta name="description" content="Get a complete 5-page professional business website in Dubai, UAE for only AED 799. Fast 3-5 days delivery, free domain and cloud hosting included."/>
+  
+  <!-- Open Graph for Facebook & Social Sharing -->
+  <meta property="og:title" content="Professional Website For Your Business — ONLY AED 799!"/>
+  <meta property="og:description" content="Modern, Fast & Mobile Ready websites in UAE. 5 Custom Pages, Free Domain & Hosting, WhatsApp Integration. 3-5 Days Launch!"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://justsearchweb.blogspot.com"/>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --primary: #FF3B1D;
+      --primary-grad: linear-gradient(135deg, #FF4500 0%, #FF6A00 100%);
+      --primary-glow: rgba(255, 69, 0, 0.35);
+      --dark: #0B0F19;
+      --dark-card: #131B2E;
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --bg-page: #FAFAFA;
+      --card-bg: #FFFFFF;
+      --whatsapp: #25D366;
+      --whatsapp-dark: #1EBE5D;
+      --border-line: #E2E8F0;
+      --radius-pill: 9999px;
+      --radius-card: 22px;
+      --shadow-soft: 0 10px 30px -5px rgba(0,0,0,0.06);
+      --shadow-hover: 0 25px 50px -12px rgba(255,69,0,0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Top Notice Bar */
+    .top-banner {
+      background: var(--dark);
+      color: #FFF;
+      font-size: 13px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .top-pill {
+      background: var(--primary-grad);
+      color: #FFF;
+      font-weight: 800;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+    .top-timer {
+      background: rgba(255,255,255,0.1);
+      padding: 3px 10px;
+      border-radius: 6px;
+      color: #FDE047;
+      font-weight: 700;
+    }
+
+    /* Sticky Navigation */
+    header.main-header {
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-line);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    }
+    .nav-wrap {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--primary-grad);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFF;
+      font-weight: 900;
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+    .brand-name h1 {
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .brand-name span {
+      font-size: 10px;
+      letter-spacing: 1.8px;
+      font-weight: 800;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      display: block;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .currency-select {
+      background: #F1F5F9;
+      border: 1px solid #CBD5E1;
+      border-radius: 20px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #334155;
+      outline: none;
+      cursor: pointer;
+    }
+    .btn-header-wa {
+      background: var(--whatsapp);
+      color: #FFF;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 9px 18px;
+      border-radius: var(--radius-pill);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(37,211,102,0.3);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 60px 20px 80px 20px;
+      background: radial-gradient(circle at 50% 0%, rgba(255,69,0,0.08) 0%, rgba(250,250,250,0) 70%);
+      text-align: center;
+    }
+    .hero-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .trust-rating-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFF;
+      border: 1px solid var(--border-line);
+      padding: 6px 18px;
+      border-radius: var(--radius-pill);
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #334155;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      margin-bottom: 24px;
+    }
+    .trust-rating-pill .stars {
+      color: #F59E0B;
+      letter-spacing: 2px;
+    }
+    .hero-title {
+      font-size: 54px;
+      font-weight: 900;
+      letter-spacing: -2px;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+    .hero-title .gradient-word {
+      background: var(--primary-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+    .hero-desc {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 36px auto;
+      font-weight: 500;
+    }
+
+    /* Big Hero Price Card */
+    .hero-price-card {
+      background: #FFFFFF;
+      border: 2px solid #FFE4DD;
+      border-radius: 26px;
+      padding: 24px 36px;
+      box-shadow: 0 20px 50px -10px rgba(255,69,0,0.15);
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      margin-bottom: 36px;
+    }
+    .badge-discount {
+      position: absolute;
+      top: -14px;
+      right: 25px;
+      background: #E11D48;
+      color: #FFF;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 4px 14px;
+      border-radius: var(--radius-pill);
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 10px rgba(225,29,72,0.3);
+    }
+    .price-text-group {
+      text-align: left;
+    }
+    .price-text-group .label-only {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--text-muted);
+      letter-spacing: 1.5px;
+      display: block;
+    }
+    .price-text-group .old-price {
+      font-size: 14px;
+      color: #94A3B8;
+      text-decoration: line-through;
+      font-weight: 700;
+    }
+    .price-text-group .main-curr {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--text-main);
+    }
+    .price-value-huge {
+      font-size: 64px;
+      font-weight: 900;
+      color: var(--primary);
+      line-height: 0.9;
+      letter-spacing: -2px;
+    }
+
+    /* Dual CTA Buttons */
+    .cta-row {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    .btn-wa-primary {
+      background: var(--whatsapp);
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 16px 36px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .btn-wa-primary:hover {
+      background: var(--whatsapp-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(37,211,102,0.5);
+    }
+    .btn-form-secondary {
+      background: #FFFFFF;
+      color: var(--text-main);
+      border: 1px solid #CBD5E1;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 32px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      cursor: pointer;
+    }
+
+    /* Social Share Strip */
+    .social-share-strip {
+      background: #FFFFFF;
+      border: 1px solid var(--border-line);
+      border-radius: var(--radius-pill);
+      padding: 10px 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: var(--shadow-soft);
+      margin-bottom: 50px;
+    }
+    .share-label {
+      font-size: 12.5px;
+      font-weight: 800;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+    .share-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFF;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .share-btn:hover {
+      transform: scale(1.1);
+    }
+    .share-wa { background: #25D366; }
+    .share-fb { background: #1877F2; }
+    .share-copy { background: #0F172A; }
+
+    /* Features Grid */
+    .section-features {
+      padding: 70px 20px;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+    .section-title-wrap {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+    .section-badge-pill {
+      color: var(--primary);
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .section-heading {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .feat-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-line);
+      border-radius: var(--radius-card);
+      padding: 30px 26px;
+      box-shadow: var(--shadow-soft);
+      transition: all 0.3s ease;
+    }
+    .feat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+      border-color: #FED7AA;
+    }
+    .feat-icon {
+      width: 52px;
+      height: 52px;
+      background: #FFF1EE;
+      color: var(--primary);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+    .feat-card h3 {
+      font-size: 19px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .feat-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Live Lead Capture Form Section */
+    .section-form {
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #0B0F19 0%, #161F36 100%);
+      color: #FFFFFF;
+      margin-top: 40px;
+    }
+    .form-container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 28px;
+      padding: 44px 36px;
+      box-shadow: 0 30px 70px rgba(0,0,0,0.5);
+    }
+    .form-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .form-header h2 {
+      font-size: 30px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+    .form-header p {
+      color: #94A3B8;
+      font-size: 14px;
+    }
+    .form-group {
+      margin-bottom: 18px;
+      text-align: left;
+    }
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: #E2E8F0;
+      margin-bottom: 6px;
+    }
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 13px 16px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      color: #FFFFFF;
+      font-size: 14px;
+      outline: none;
+      transition: border 0.2s;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: #FF5722;
+      background: rgba(255,255,255,0.12);
+    }
+    .form-input::placeholder, .form-textarea::placeholder {
+      color: #64748B;
+    }
+    .btn-submit-lead {
+      width: 100%;
+      background: var(--whatsapp);
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 900;
+      padding: 16px;
+      border-radius: var(--radius-pill);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 10px 25px rgba(37,211,102,0.4);
+      margin-top: 10px;
+      transition: transform 0.2s;
+    }
+    .btn-submit-lead:hover {
+      background: var(--whatsapp-dark);
+      transform: translateY(-2px);
+    }
+    .form-status {
+      margin-top: 16px;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 13.5px;
+      text-align: center;
+      display: none;
+    }
+    .form-status.success {
+      background: rgba(16, 185, 129, 0.2);
+      color: #34D399;
+      border: 1px solid #059669;
+      display: block;
+    }
+    .form-status.error {
+      background: rgba(239, 68, 68, 0.2);
+      color: #F87171;
+      border: 1px solid #DC2626;
+      display: block;
+    }
+
+    /* FAQ Section */
+    .section-faq {
+      padding: 80px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: #FFFFFF;
+      border: 1px solid var(--border-line);
+      border-radius: 16px;
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 18px 22px;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .faq-a {
+      padding: 0 22px 18px 22px;
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      display: none;
+    }
+    .faq-item.open .faq-a {
+      display: block;
+    }
+    .faq-item.open .faq-toggle {
+      transform: rotate(45deg);
+      color: var(--primary);
+    }
+
+    /* Floating WhatsApp Button */
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      background: var(--whatsapp);
+      color: #FFF;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 14px 22px;
+      border-radius: var(--radius-pill);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
+      cursor: pointer;
+    }
+    .wa-float:hover {
+      background: var(--whatsapp-dark);
+      transform: scale(1.05);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0F172A;
+      color: #FFF;
+      padding: 10px 24px;
+      border-radius: var(--radius-pill);
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    .toast.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(-10px);
+    }
+
+    /* Footer */
+    footer.site-foot {
+      background: var(--dark);
+      color: #94A3B8;
+      padding: 40px 20px 30px 20px;
+      text-align: center;
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    @media (max-width: 768px) {
+      .hero-title { font-size: 34px; letter-spacing: -1px; }
+      .hero-desc { font-size: 15px; }
+      .price-value-huge { font-size: 48px; }
+      .hero-price-card { padding: 18px 24px; gap: 14px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .form-container { padding: 30px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Limited Offer Bar -->
+  <div class="top-banner">
+    <span class="top-pill">LIMITED TIME DEAL</span>
+    <span>🔥 Complete 5-Page Website in UAE — Starting at AED 799!</span>
+    <span class="top-timer">⏳ Ends in: <strong id="timerDisplay">02d 14h 18m</strong></span>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="nav-wrap">
+      <a class="brand-group" href="/">
+        <div class="brand-icon">JS</div>
+        <div class="brand-name">
+          <h1>Just Search</h1>
+          <span>WEB DESIGN • DUBAI, UAE</span>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <!-- Currency Selector -->
+        <select class="currency-select" id="currSelect" onchange="switchCurrency()">
+          <option value="AED">🇦🇪 AED 799</option>
+          <option value="USD">🇺🇸 USD $219</option>
+          <option value="BDT">🇧🇩 BDT ৳ 18,500</option>
+          <option value="INR">🇮🇳 INR ₹ 17,999</option>
+          <option value="SAR">🇸🇦 SAR 799</option>
+        </select>
+
+        <a class="btn-header-wa" href="https://wa.me/971503760371?text=Hi%20Just%20Search,%20I%20am%20interested%20in%20the%20AED%20799%20website%20deal" target="_blank">
+          <span>WhatsApp Us</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <!-- Rating Proof -->
+      <div class="trust-rating-pill">
+        <span class="stars">★★★★★</span>
+        <span>Rated <strong>4.9/5</strong> by 140+ Businesses across UAE</span>
+      </div>
+
+      <h2 class="hero-title">
+        Professional <span class="gradient-word">Website</span><br/>For Your Business
+      </h2>
+
+      <p class="hero-desc">
+        Build a stronger business online with modern, fast, high-converting websites designed to turn visitors into paying customers.
+      </p>
+
+      <!-- The Eye-Catching Price Card -->
+      <div class="hero-price-card">
+        <div class="badge-discount">50% SPECIAL DISCOUNT</div>
+        <div class="price-text-group">
+          <span class="label-only">ONLY</span>
+          <div class="old-price" id="oldPriceDisplay">AED 1,499</div>
+          <span class="main-curr" id="currSymbol">AED</span>
+        </div>
+        <div class="price-value-huge" id="currPrice">799</div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="cta-row">
+        <a class="btn-wa-primary" href="https://wa.me/971503760371?text=Hi%20Just%20Search,%20I%20want%20to%20order%20the%20AED%20799%20Website%20Package" target="_blank">
+          <span>Claim Offer on WhatsApp →</span>
+        </a>
+        <a class="btn-form-secondary" href="#inquiryForm">
+          <span>Request Quote Online ↓</span>
+        </a>
+      </div>
+
+      <!-- Quick Share Strip -->
+      <div class="social-share-strip">
+        <span class="share-label">Share This Offer:</span>
+        <a class="share-btn share-wa" href="https://api.whatsapp.com/send?text=Check%20out%20this%20AED%20799%20Professional%20Website%20Package%20for%20business:%20https://justsearchweb.blogspot.com" target="_blank" title="Share on WhatsApp">💬</a>
+        <a class="share-btn share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://justsearchweb.blogspot.com" target="_blank" title="Share on Facebook">f</a>
+        <div class="share-btn share-copy" onclick="copyShareLink()" title="Copy Link">🔗</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="section-features">
+    <div class="section-title-wrap">
+      <span class="section-badge-pill">EVERYTHING INCLUDED</span>
+      <h2 class="section-heading">Why Choose Just Search?</h2>
+    </div>
+
+    <div class="features-grid">
+      <div class="feat-card">
+        <div class="feat-icon">💻</div>
+        <h3>5 Custom Pages</h3>
+        <p>Complete professional layout with Home, About Us, Services, Portfolio, and Contact Page.</p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">🌐</div>
+        <h3>Free 1-Yr Domain & Hosting</h3>
+        <p>We handle domain setup (.com / .ae) and high-speed cloud hosting without any technical headache.</p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">📱</div>
+        <h3>100% Mobile Ready</h3>
+        <p>Pixel-perfect layout and blazing-fast loading speeds on iPhones, Androids, iPads, and PCs.</p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">💬</div>
+        <h3>Direct WhatsApp Chat</h3>
+        <p>Floating WhatsApp integration and instant lead capture forms so clients reach you in 1 click.</p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">🚀</div>
+        <h3>Fast 3-5 Days Launch</h3>
+        <p>Rapid turnaround time so your business can start taking inquiries and orders right away.</p>
+      </div>
+
+      <div class="feat-card">
+        <div class="feat-icon">🛡️</div>
+        <h3>100% Satisfaction</h3>
+        <p>Unlimited revisions until you are completely satisfied with the design and performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Connected Lead Intake Form -->
+  <section class="section-form" id="inquiryForm">
+    <div class="form-container">
+      <div class="form-header">
+        <span style="color:#FF6A00; font-size:12px; font-weight:800; letter-spacing:1px;">GET STARTED TODAY</span>
+        <h2>Order Your Website</h2>
+        <p>Fill out this form and our web specialist will contact you on WhatsApp within 15 minutes.</p>
+      </div>
+
+      <form id="leadForm" onsubmit="handleLeadSubmit(event)">
+        <!-- Anti-Spam Honeypot Field -->
+        <input type="text" name="_hp_website" id="_hp_website" style="display:none;" tabindex="-1" autocomplete="off"/>
+
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="e.g. Mohammad Al-Mansoor" required/>
+        </div>
+
+        <div class="form-group">
+          <label>WhatsApp / Phone Number *</label>
+          <input class="form-input" type="tel" id="phone" name="phone" placeholder="+971 50 123 4567" required/>
+        </div>
+
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="name@company.com" required/>
+        </div>
+
+        <div class="form-group">
+          <label>Service Needed</label>
+          <select class="form-select" id="service" name="service">
+            <option value="5-Page Business Website (AED 799)">5-Page Business Website (AED 799)</option>
+            <option value="E-Commerce Online Store">E-Commerce Online Store</option>
+            <option value="Custom Web Application">Custom Web Application</option>
+            <option value="Website Redesign & SEO">Website Redesign & SEO</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Briefly tell us about your business</label>
+          <textarea class="form-textarea" id="message" name="message" rows="3" placeholder="What does your company do? Any specific features needed?"></textarea>
+        </div>
+
+        <button class="btn-submit-lead" type="submit" id="submitBtn">
+          <span>Submit & Connect on WhatsApp →</span>
+        </button>
+
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="section-faq">
+    <div class="section-title-wrap">
+      <span class="section-badge-pill">GOT QUESTIONS?</span>
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">
+        <span>How long does it take to deliver my website?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-a">
+        Standard turnaround time is strictly 3 to 5 business days after you provide your basic business details and text.
+      </div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">
+        <span>Are there any hidden or monthly costs?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-a">
+        None! The AED 799 offer is a one-time setup fee including 1 year of hosting and domain setup. No monthly fees.
+      </div>
+    </div>
+
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">
+        <span>Can I update my website content in the future?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-a">
+        Yes! We provide an easy-to-use admin panel where you can update text, add blog posts, and change photos with zero coding.
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp CTA -->
+  <a class="wa-float" href="https://wa.me/971503760371?text=Hi%20Just%20Search,%20I%20want%20to%20discuss%20a%20website%20project" target="_blank">
+    <span>💬 Chat on WhatsApp</span>
+  </a>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Link copied to clipboard! Share it anywhere.</div>
+
+  <!-- Footer -->
+  <footer class="site-foot">
+    <p><strong>Just Search Web Design</strong> • Dubai, United Arab Emirates</p>
+    <p style="margin-top:6px; color:#64748B;">WhatsApp: +971 50 376 0371 • Website: justsearchweb.blogspot.com</p>
+    <p style="margin-top:14px; font-size:12px;">© 2026 Just Search Web Design. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Currency Switcher Logic
+    const currRates = {
+      AED: { symbol: 'AED', price: '799', old: 'AED 1,499' },
+      USD: { symbol: '$', price: '219', old: '$399' },
+      BDT: { symbol: '৳', price: '18,500', old: '৳ 35,000' },
+      INR: { symbol: '₹', price: '17,999', old: '₹ 32,000' },
+      SAR: { symbol: 'SAR', price: '799', old: 'SAR 1,499' }
+    };
+
+    function switchCurrency() {
+      const sel = document.getElementById('currSelect').value;
+      const data = currRates[sel];
+      document.getElementById('currSymbol').innerText = data.symbol;
+      document.getElementById('currPrice').innerText = data.price;
+      document.getElementById('oldPriceDisplay').innerText = data.old;
+    }
+
+    // FAQ Toggle
+    function toggleFaq(el) {
+      el.classList.toggle('open');
+    }
+
+    // Copy Share Link
+    function copyShareLink() {
+      const shareUrl = "https://justsearchweb.blogspot.com";
+      navigator.clipboard.writeText(shareUrl).then(() => {
+        const toast = document.getElementById('toast');
+        toast.classList.add('show');
+        setTimeout(() => { toast.classList.remove('show'); }, 3000);
+      });
+    }
+
+    // Live Lead Submission to Render Backend + WhatsApp Dispatch
+    async function handleLeadSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      const status = document.getElementById('formStatus');
+      
+      const payload = {
+        name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
+        service: document.getElementById('service').value,
+        package: "AED 799 Deal",
+        message: document.getElementById('message').value.trim(),
+        _hp_website: document.getElementById('_hp_website').value.trim()
+      };
+
+      btn.disabled = true;
+      btn.innerHTML = "Saving your inquiry...";
+
+      const waMsg = `Hi Just Search, I want to order the AED 799 Website Package.
+
+👤 Name: ${payload.name}
+📱 Phone: ${payload.phone}
+💼 Service: ${payload.service}
+📝 Note: ${payload.message || 'Ready to start'}`;
+      const waUrl = `https://wa.me/971503760371?text=${encodeURIComponent(waMsg)}`;
+
+      try {
+        // Send to live Render Backend
+        const resp = await fetch("https://justsearch-backend.onrender.com/api/v1/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        status.className = "form-status success";
+        status.innerText = "✓ Inquiry saved! Opening WhatsApp now...";
+
+        setTimeout(() => {
+          window.open(waUrl, "_blank");
+          btn.disabled = false;
+          btn.innerHTML = "Submit & Connect on WhatsApp →";
+        }, 1200);
+
+      } catch (err) {
+        // Fallback to WhatsApp even if network fails
+        console.warn("API fallback to WhatsApp:", err);
+        status.className = "form-status success";
+        status.innerText = "Connecting directly to WhatsApp...";
+        setTimeout(() => {
+          window.open(waUrl, "_blank");
+          btn.disabled = false;
+          btn.innerHTML = "Submit & Connect on WhatsApp →";
+        }, 800);
+      }
+    }
+  </script>
+</body>
+</html>
